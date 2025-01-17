@@ -5,6 +5,9 @@ on:
     branches:
       - main # Deploy when changes are pushed to the main branch
 
+permissions:
+  contents: write # Grant write access to the repository content for deployment
+
 jobs:
   build:
     name: Build the Project
