@@ -6,35 +6,35 @@ const Albums = () => {
   const albumList = [
     {
       title: "De Mi Corazón al Aire (1991)",
-      image: "/images/de-mi-corazon-al-aire.jpg",
+      image: "/public/dmc.jpg",
     },
     {
       title: "Vivencias Imaginadas (1995)",
-      image: "/images/vivencias-imaginadas.jpg",
+      image: "/public/vi.jpg",
     },
     {
       title: "Poeta (1997, con la Orquesta de Córdoba)",
-      image: "/images/poeta.jpg",
+      image: "/public/poeta.jpg",
     },
     {
       title: "Ciudad de las Ideas (2000)",
-      image: "/images/ciudad-de-las-ideas.jpg",
+      image: "/public/cdl.jpg",
     },
     {
       title: "Paseo de Gracia (2009)",
-      image: "/images/paseo-de-gracia.jpg",
+      image: "/public/psg.jpg",
     },
     {
       title: "Tierra (2013)",
-      image: "/images/tierra.jpg",
+      image: "/public/tierra.jpg",
     },
     {
       title: "Memoria de los Sentidos (2017)",
-      image: "/images/memoria-de-los-sentidos.jpg",
+      image: "/public/mds.jpg",
     },
     {
       title: "Andenes del Tiempo (2024)",
-      image: "/images/andenes-del-tiempo.jpg",
+      image: "/public/ant.png",
     },
   ];
 
@@ -42,7 +42,7 @@ const Albums = () => {
     dots: false, // Remove navigation dots
     arrows: false, // Remove navigation arrows
     infinite: true, // Enable infinite looping
-    speed: 5000, // Slow down the transition speed
+    speed: 3500, // Slow down the transition speed
     slidesToShow: 3, // Show 3 slides at a time
     slidesToScroll: 1, // Scroll 1 slide at a time
     autoplay: true, // Enable autoplay
