@@ -39,18 +39,19 @@ const Albums = () => {
   ];
 
   const settings = {
-    dots: true, // Show navigation dots
-    infinite: true, // Infinite loop
-    speed: 500, // Transition speed
-    slidesToShow: 3, // Number of slides to show at a time
-    slidesToScroll: 1, // Number of slides to scroll at a time
+    dots: false, // Remove navigation dots
+    arrows: false, // Remove navigation arrows
+    infinite: true, // Enable infinite looping
+    speed: 5000, // Slow down the transition speed
+    slidesToShow: 3, // Show 3 slides at a time
+    slidesToScroll: 1, // Scroll 1 slide at a time
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Autoplay delay in milliseconds
+    autoplaySpeed: 0, // Set autoplay delay to 5 seconds
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1, // Show 1 slide on small screens
+          slidesToShow: 1, // Show 1 slide on smaller screens
         },
       },
       {
