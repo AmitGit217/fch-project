@@ -46,7 +46,7 @@ const Albums = () => {
     slidesToShow: 3, // Show 3 slides at a time
     slidesToScroll: 1, // Scroll 1 slide at a time
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 0, // Set autoplay delay to 5 seconds
+    autoplaySpeed: 0.5, // Set autoplay delay to 5 seconds
     responsive: [
       {
         breakpoint: 768,
