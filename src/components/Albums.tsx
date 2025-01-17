@@ -6,35 +6,35 @@ const Albums = () => {
   const albumList = [
     {
       title: "De Mi Corazón al Aire (1991)",
-      image: "/public/dmc.jpg",
+      image: "/src/assets/dmc.jpg",
     },
     {
       title: "Vivencias Imaginadas (1995)",
-      image: "/public/vi.jpg",
+      image: "/src/assets/vi.jpg",
     },
     {
       title: "Poeta (1997, con la Orquesta de Córdoba)",
-      image: "/public/poeta.jpg",
+      image: "/src/assets/poeta.jpg",
     },
     {
       title: "Ciudad de las Ideas (2000)",
-      image: "/public/cdl.jpg",
+      image: "/src/assets/cdl.jpg",
     },
     {
       title: "Paseo de Gracia (2009)",
-      image: "/public/psg.jpg",
+      image: "/src/assets/psg.jpg",
     },
     {
       title: "Tierra (2013)",
-      image: "/public/tierra.jpg",
+      image: "/src/assets/tierra.jpg",
     },
     {
       title: "Memoria de los Sentidos (2017)",
-      image: "/public/mds.jpg",
+      image: "/src/assets/mds.jpg",
     },
     {
       title: "Andenes del Tiempo (2024)",
-      image: "/public/ant.png",
+      image: "/src/assets/ant.png",
     },
   ];
 
