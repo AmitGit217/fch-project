@@ -2,6 +2,7 @@ import './App.css';
 import Biography from './components/Biography';
 import Albums from './components/Albums';
 import VideoEmbed from './components/Video';
+import vicente from './assets/vicente.jpg';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         {/* Wrap hero content in .container */}
         <div className="container">
           <div className="hero-content">
-            <img src="/vicente.jpg" alt="Vicente Amigo" className="hero-image" />
+            <img src={vicente} alt="Vicente Amigo" className="hero-image" />
             <div className="hero-text">
               <h1>Vicente Amigo</h1>
               <p>

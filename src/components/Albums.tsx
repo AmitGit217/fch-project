@@ -17,15 +17,20 @@ const Albums = () => {
       <h2>Álbumes</h2>
       {albumList.map((album, index) => (
         <motion.div
-          key={index}
-          className="album-item"
-          initial={{ x: index % 2 === 0 ? "-100vw" : "100vw", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: index * 0.3 }}
-        >
-          <img src={album.image} alt={album.title} className="album-image" />
-          <h3>{album.title}</h3>
-        </motion.div>
+        key={index}
+        className="album-item"
+        initial={{ x: index % 2 === 0 ? "-100vw" : "100vw", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{
+          duration: 4, // increase duration (e.g., from 1 to 2 or 3)
+          delay: index * 2, // optional: increase to slow down the stagger
+          ease: "easeInOut", // optional: choose a smoother easing
+        }}
+      >
+        <img src={album.image} alt={album.title} className="album-image" />
+        <h3>{album.title}</h3>
+      </motion.div>
+      
       ))}
     </section>
   );
