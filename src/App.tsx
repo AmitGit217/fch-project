@@ -1,7 +1,7 @@
 import './App.css';
 import Albums from './components/Albums';
 import VideoEmbed from './components/Video';
-import vicente from './assets/vicente.jpg';
+import vicente from './assets/vicente-min.jpg';
 
 function App() {
   return (
