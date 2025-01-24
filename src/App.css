@@ -96,60 +96,69 @@ body {
 
 /* Albums Section */
 .albums {
-  margin: 4rem 0;
-  padding: 1rem;
+  margin: 7rem 0;
 }
 
 .album-item {
-  margin: 4rem 0;
+  margin: 4rem  5rem;
 }
 
 .album-image {
   max-width: 600px;
   width: 100%;
   height: auto;
-  margin-bottom: 1rem;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Ficha Técnica (Technical Sheet) */
-.ficha-tecnica {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background: #2a2a2a;
+.video-embed {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background-color: #fafafa;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  text-align: center; /* Center text here as well */
+}
+
+@media (max-width: 768px) {
+  .video-embed {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ficha técnica section */
+.ficha-tecnica {
+  padding: 1rem;
 }
 
 .ficha-tecnica h3 {
-  margin-bottom: 0.5rem;
-  color: #ff4500;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #333;
 }
 
 .ficha-tecnica ul {
-  list-style: none;
+  list-style-type: none; /* remove default bullets if you like */
   padding: 0;
+  margin: 0;
 }
 
 .ficha-tecnica li {
   margin-bottom: 0.5rem;
   font-size: 1rem;
-  color: #cccccc;
+  color: #555;
 }
 
-/* Video Frame */
+/* Video styling */
 .video-frame {
   width: 100%;
-  max-width: 640px;
-  height: 360px;
+  height: auto;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* 
-  Removed all .audio-visualization, .waveform-container, and audio rules
-  to eliminate audio visualization styling.
-*/
+

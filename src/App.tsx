@@ -1,5 +1,4 @@
 import './App.css';
-import Biography from './components/Biography';
 import Albums from './components/Albums';
 import VideoEmbed from './components/Video';
 import vicente from './assets/vicente.jpg';
@@ -25,7 +24,6 @@ function App() {
 
       {/* Wrap main content in the same container */}
       <main className="container">
-        <Biography />
         <Albums />
         <VideoEmbed />
       </main>
