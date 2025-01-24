@@ -6,10 +6,24 @@ import VideoEmbed from './components/Video';
 function App() {
   return (
     <>
-      <header>
-        <h1>Vicente Amigo</h1>
+      <header className="hero">
+        {/* Wrap hero content in .container */}
+        <div className="container">
+          <div className="hero-content">
+            <img src="/vicente.jpg" alt="Vicente Amigo" className="hero-image" />
+            <div className="hero-text">
+              <h1>Vicente Amigo</h1>
+              <p>
+                Uno de los guitarristas flamencos más influyentes, llevando el flamenco
+                a nuevas alturas con su estilo virtuoso e innovador.
+              </p>
+            </div>
+          </div>
+        </div>
       </header>
-      <main>
+
+      {/* Wrap main content in the same container */}
+      <main className="container">
         <Biography />
         <Albums />
         <VideoEmbed />
