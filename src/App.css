@@ -1,238 +1,164 @@
-/* Add this to App.css */
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* hide horizontal overflow */
+  display: flex;
+  flex-direction: column;
+}
 
 
-
-
-
-/* General Styles */
-/* Background Image */
+/* Reset body so it just spans the full viewport */
 body {
-  background: url('/bg.jpg') no-repeat center center fixed;
-  background-size: cover; /* Ensures it covers the whole viewport */
+  background: #121212;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  color: #333;
+  text-align: center;
+  width: 100vw;
 }
 
-/* App Container for Content */
-.app-container {
-  background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 900px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Create a wrapper that gets centered */
+.app {
+  max-width: 1200px; /* or whatever width you prefer */
+  margin: 0 auto;    /* center this container */
+  padding: 0 1rem;   /* optional padding on the sides */
+}
+
+/* If you want all text centered by default */
+.app * {
   text-align: center;
 }
 
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Headings */
+h1, h2, h3 {
+  color: #ffffff;
 }
 
-/* App Container */
-.app-container {
-  line-height: 1.8;
-  margin: 0 auto;
-  padding: 1rem;
-  max-width: 900px;
-  text-align: center;
-}
-
-/* Header */
-header {
-  background: #ffffff9a;
-  padding: 1.5rem 1rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  font-family: 'Lora', serif;
-  font-size: 4rem;
+/* Hero Section */
+body {
+  background: #121212;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  color: #444;
-  background: #ffffff9a;
-}
-
-header p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Sections */
-section {
-  margin-bottom: 2.5rem;
-  padding: 1.5rem;
-  border-radius: 8px;
-  background: #ffffff9a;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.biography {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background-color: #fafafa;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  line-height: 1.8;
-}
-
-.biography h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.biography p {
-  margin-bottom: 1.5rem;
-  color: #555;
-  font-size: 1.1rem;
-}
-
-.biography p strong {
-  color: #333;
-  font-weight: bold;
-}
-
-.biography p em {
-  font-style: italic;
-  color: #777;
-}
-
-.biography,
-.albums,
-.video-embed {
-  padding: 1.5rem;
-}
-
-/* Lists */
-ul {
-  list-style: none;
   padding: 0;
-  margin: 0;
+  overflow-x: hidden; /* prevent horizontal scroll from animations */
 }
 
-ul li {
-  background: #f2f2f2;
-  margin: 0.5rem 0;
-  padding: 0.75rem;
-  border-radius: 4px;
-  font-size: 1rem;
+/* 2. Container class to center content */
+.container {
+  max-width: 1200px;  /* or your preferred width */
+  margin: 0 auto;     /* center horizontally */
+  padding: 0 1rem;    /* optional side padding */
+  text-align: center; /* center text inside */
 }
 
-/* Responsive Video */
-.video-embed iframe {
+/* 3. Example hero styling */
+.hero {
   width: 100%;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9; /* Modern browsers handle this automatically */
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.484),
+      rgba(0, 0, 0, 0.4)
+    );
+  background-size: contain;
+  background-position: bottom;
+  color: #fff;
+  padding: 3rem 0;  /* vertical padding for the hero section */
+  border-radius: 15% 85% 85% 15% / 15% 15% 85% 85%; /* custom border radius */
 }
 
-/* Footer */
-footer {
-  font-size: 0.9rem;
-  color: #777;
-  margin-top: 2rem;
+/* 4. If you want the hero content side-by-side or stacked, define .hero-content */
+.hero-content {
+  display: flex;             
+  flex-direction: column;    /* stack image and text */
+  align-items: center;       /* center items horizontally */
+  justify-content: center;   /* center items vertically if needed */
+  gap: 2rem;                 /* space between image and text */
 }
 
+.hero-image {
+  max-width: 700px;
+  border-radius: 15% 85% 85% 15% / 15% 15% 85% 85%; /* custom border radius */
+  border: #cccccc 2px solid; /* optional border */
+}
 
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin: 0;
+}
 
+.hero-text p {
+  font-size: 1.2rem;
+}
 
+/* Albums Section */
 .albums {
-  text-align: center;
-  margin: 2rem auto;
+  margin: 7rem 0;
 }
 
 .album-item {
-  text-align: center;
-  padding: 1rem;
+  margin: 4rem  5rem;
 }
 
 .album-image {
+  max-width: 600px;
   width: 100%;
-  max-width: 200px;
   height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 0 auto 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
-.album-title {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #333;
-}
-
-
+/* Ficha Técnica (Technical Sheet) */
 .video-embed {
-  text-align: center;
+  max-width: 1200px;
   margin: 2rem auto;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   background-color: #fafafa;
-  max-width: 800px;
+  border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+  .video-embed {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ficha técnica section */
 .ficha-tecnica {
-  text-align: left;
-  margin-bottom: 1.5rem;
+  padding: 1rem;
 }
 
 .ficha-tecnica h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
   color: #333;
 }
 
 .ficha-tecnica ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
+  list-style-type: none; /* remove default bullets if you like */
+  padding: 0;
+  margin: 0;
 }
 
 .ficha-tecnica li {
-  margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
   color: #555;
 }
 
+/* Video styling */
 .video-frame {
   width: 100%;
-  max-width: 640px;
-  height: 360px;
+  height: auto;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 
-.video-embed {
-  text-align: center;
-  margin: 2rem auto;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #fafafa;
-  max-width: 800px;
-}
-
-.video-frame {
-  width: 100%;
-  max-width: 640px;
-  height: 360px;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
